@@ -1,0 +1,15 @@
+<Solution>
+  <Project Path="ApiGateway/ApiGateway.csproj" />
+  <Project Path="AuthService/AuthService.csproj" />
+  <Project Path="CategoryService/CategoryService.csproj" />
+  <Project Path="CommentService/CommentService.csproj" />
+  <Project Path="NewsletterService/NewsletterService.csproj" />
+  <Project Path="NotificationService/NotificationService.csproj" />
+  <Project Path="PostService/PostService.csproj" />
+  <Project Path="AuthService.Tests/AuthService.Tests.csproj" />
+  <Project Path="CategoryService.Tests/CategoryService.Tests.csproj" />
+  <Project Path="CommentService.Tests/CommentService.Tests.csproj" />
+  <Project Path="NewsletterService.Tests/NewsletterService.Tests.csproj" />
+  <Project Path="NotificationService.Tests/NotificationService.Tests.csproj" />
+  <Project Path="PostService.Tests/PostService.Tests.csproj" />
+</Solution>
