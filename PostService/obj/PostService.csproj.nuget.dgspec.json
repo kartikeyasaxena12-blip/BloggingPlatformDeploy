@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\BloggingPlatform\\PostService\\PostService.csproj": {}
+    "G:\\BlogginPlatformDeploy\\PostService\\PostService.csproj": {}
   },
   "projects": {
-    "G:\\BloggingPlatform\\PostService\\PostService.csproj": {
+    "G:\\BlogginPlatformDeploy\\PostService\\PostService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\BloggingPlatform\\PostService\\PostService.csproj",
+        "projectUniqueName": "G:\\BlogginPlatformDeploy\\PostService\\PostService.csproj",
         "projectName": "PostService",
-        "projectPath": "G:\\BloggingPlatform\\PostService\\PostService.csproj",
+        "projectPath": "G:\\BlogginPlatformDeploy\\PostService\\PostService.csproj",
         "packagesPath": "C:\\Users\\amit\\.nuget\\packages\\",
-        "outputPath": "G:\\BloggingPlatform\\PostService\\obj\\",
+        "outputPath": "G:\\BlogginPlatformDeploy\\PostService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

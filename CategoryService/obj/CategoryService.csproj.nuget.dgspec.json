@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\BloggingPlatform\\CategoryService\\CategoryService.csproj": {}
+    "G:\\BlogginPlatformDeploy\\CategoryService\\CategoryService.csproj": {}
   },
   "projects": {
-    "G:\\BloggingPlatform\\CategoryService\\CategoryService.csproj": {
+    "G:\\BlogginPlatformDeploy\\CategoryService\\CategoryService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\BloggingPlatform\\CategoryService\\CategoryService.csproj",
+        "projectUniqueName": "G:\\BlogginPlatformDeploy\\CategoryService\\CategoryService.csproj",
         "projectName": "CategoryService",
-        "projectPath": "G:\\BloggingPlatform\\CategoryService\\CategoryService.csproj",
+        "projectPath": "G:\\BlogginPlatformDeploy\\CategoryService\\CategoryService.csproj",
         "packagesPath": "C:\\Users\\amit\\.nuget\\packages\\",
-        "outputPath": "G:\\BloggingPlatform\\CategoryService\\obj\\",
+        "outputPath": "G:\\BlogginPlatformDeploy\\CategoryService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

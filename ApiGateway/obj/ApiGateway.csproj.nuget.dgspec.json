@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\BloggingPlatform\\ApiGateway\\ApiGateway.csproj": {}
+    "G:\\BlogginPlatformDeploy\\ApiGateway\\ApiGateway.csproj": {}
   },
   "projects": {
-    "G:\\BloggingPlatform\\ApiGateway\\ApiGateway.csproj": {
+    "G:\\BlogginPlatformDeploy\\ApiGateway\\ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\BloggingPlatform\\ApiGateway\\ApiGateway.csproj",
+        "projectUniqueName": "G:\\BlogginPlatformDeploy\\ApiGateway\\ApiGateway.csproj",
         "projectName": "ApiGateway",
-        "projectPath": "G:\\BloggingPlatform\\ApiGateway\\ApiGateway.csproj",
+        "projectPath": "G:\\BlogginPlatformDeploy\\ApiGateway\\ApiGateway.csproj",
         "packagesPath": "C:\\Users\\amit\\.nuget\\packages\\",
-        "outputPath": "G:\\BloggingPlatform\\ApiGateway\\obj\\",
+        "outputPath": "G:\\BlogginPlatformDeploy\\ApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

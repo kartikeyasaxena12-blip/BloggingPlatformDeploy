@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\BloggingPlatform\\NewsletterService.Tests\\NewsletterService.Tests.csproj": {}
+    "G:\\BlogginPlatformDeploy\\NewsletterService.Tests\\NewsletterService.Tests.csproj": {}
   },
   "projects": {
-    "G:\\BloggingPlatform\\NewsletterService.Tests\\NewsletterService.Tests.csproj": {
+    "G:\\BlogginPlatformDeploy\\NewsletterService.Tests\\NewsletterService.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\BloggingPlatform\\NewsletterService.Tests\\NewsletterService.Tests.csproj",
+        "projectUniqueName": "G:\\BlogginPlatformDeploy\\NewsletterService.Tests\\NewsletterService.Tests.csproj",
         "projectName": "NewsletterService.Tests",
-        "projectPath": "G:\\BloggingPlatform\\NewsletterService.Tests\\NewsletterService.Tests.csproj",
+        "projectPath": "G:\\BlogginPlatformDeploy\\NewsletterService.Tests\\NewsletterService.Tests.csproj",
         "packagesPath": "C:\\Users\\amit\\.nuget\\packages\\",
-        "outputPath": "G:\\BloggingPlatform\\NewsletterService.Tests\\obj\\",
+        "outputPath": "G:\\BlogginPlatformDeploy\\NewsletterService.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj": {
-                "projectPath": "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj"
+              "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj": {
+                "projectPath": "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj"
               }
             }
           }
@@ -378,14 +378,14 @@
         }
       }
     },
-    "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj": {
+    "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj",
+        "projectUniqueName": "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj",
         "projectName": "NewsletterService",
-        "projectPath": "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj",
+        "projectPath": "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj",
         "packagesPath": "C:\\Users\\amit\\.nuget\\packages\\",
-        "outputPath": "G:\\BloggingPlatform\\NewsletterService\\obj\\",
+        "outputPath": "G:\\BlogginPlatformDeploy\\NewsletterService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -451,9 +451,9 @@
               "target": "Package",
               "version": "[10.0.7, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[10.0.7, )"
+              "version": "[10.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

@@ -2665,11 +2665,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\BloggingPlatform\\NotificationService\\NotificationService.csproj",
+      "projectUniqueName": "G:\\BlogginPlatformDeploy\\NotificationService\\NotificationService.csproj",
       "projectName": "NotificationService",
-      "projectPath": "G:\\BloggingPlatform\\NotificationService\\NotificationService.csproj",
+      "projectPath": "G:\\BlogginPlatformDeploy\\NotificationService\\NotificationService.csproj",
       "packagesPath": "C:\\Users\\amit\\.nuget\\packages\\",
-      "outputPath": "G:\\BloggingPlatform\\NotificationService\\obj\\",
+      "outputPath": "G:\\BlogginPlatformDeploy\\NotificationService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

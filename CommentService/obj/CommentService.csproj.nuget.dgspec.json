@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\BloggingPlatform\\CommentService\\CommentService.csproj": {}
+    "G:\\BlogginPlatformDeploy\\CommentService\\CommentService.csproj": {}
   },
   "projects": {
-    "G:\\BloggingPlatform\\CommentService\\CommentService.csproj": {
+    "G:\\BlogginPlatformDeploy\\CommentService\\CommentService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\BloggingPlatform\\CommentService\\CommentService.csproj",
+        "projectUniqueName": "G:\\BlogginPlatformDeploy\\CommentService\\CommentService.csproj",
         "projectName": "CommentService",
-        "projectPath": "G:\\BloggingPlatform\\CommentService\\CommentService.csproj",
+        "projectPath": "G:\\BlogginPlatformDeploy\\CommentService\\CommentService.csproj",
         "packagesPath": "C:\\Users\\amit\\.nuget\\packages\\",
-        "outputPath": "G:\\BloggingPlatform\\CommentService\\obj\\",
+        "outputPath": "G:\\BlogginPlatformDeploy\\CommentService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

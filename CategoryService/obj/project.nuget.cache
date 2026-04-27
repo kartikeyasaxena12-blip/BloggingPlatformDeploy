@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vGwCs5dkRYk=",
+  "dgSpecHash": "cOHnWlAOd/0=",
   "success": true,
-  "projectFilePath": "G:\\BloggingPlatform\\CategoryService\\CategoryService.csproj",
+  "projectFilePath": "G:\\BlogginPlatformDeploy\\CategoryService\\CategoryService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amit\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\amit\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\10.0.7\\microsoft.aspnetcore.diagnostics.entityframeworkcore.10.0.7.nupkg.sha512",

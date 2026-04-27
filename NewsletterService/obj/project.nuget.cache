@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mVDkYXgc8ms=",
+  "dgSpecHash": "iQjM5vTjAhA=",
   "success": true,
-  "projectFilePath": "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj",
+  "projectFilePath": "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amit\\.nuget\\packages\\bouncycastle.cryptography\\2.5.0\\bouncycastle.cryptography.2.5.0.nupkg.sha512",
     "C:\\Users\\amit\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -48,9 +48,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'MailKit' 4.9.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9j88-vvj5-vhgr",
-      "projectPath": "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj",
+      "projectPath": "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj",
       "warningLevel": 1,
-      "filePath": "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj",
+      "filePath": "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj",
       "libraryId": "MailKit",
       "targetGraphs": [
         "net10.0"
@@ -60,9 +60,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'MimeKit' 4.9.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g7hc-96xr-gvvx",
-      "projectPath": "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj",
+      "projectPath": "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj",
       "warningLevel": 1,
-      "filePath": "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj",
+      "filePath": "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj",
       "libraryId": "MimeKit",
       "targetGraphs": [
         "net10.0"

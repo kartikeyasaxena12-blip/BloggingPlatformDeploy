@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj": {}
+    "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj": {}
   },
   "projects": {
-    "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj": {
+    "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj",
+        "projectUniqueName": "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj",
         "projectName": "NewsletterService",
-        "projectPath": "G:\\BloggingPlatform\\NewsletterService\\NewsletterService.csproj",
+        "projectPath": "G:\\BlogginPlatformDeploy\\NewsletterService\\NewsletterService.csproj",
         "packagesPath": "C:\\Users\\amit\\.nuget\\packages\\",
-        "outputPath": "G:\\BloggingPlatform\\NewsletterService\\obj\\",
+        "outputPath": "G:\\BlogginPlatformDeploy\\NewsletterService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

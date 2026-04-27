@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2hljNsMOXXY=",
+  "dgSpecHash": "FrVEiWitYcI=",
   "success": true,
-  "projectFilePath": "G:\\BloggingPlatform\\NotificationService\\NotificationService.csproj",
+  "projectFilePath": "G:\\BlogginPlatformDeploy\\NotificationService\\NotificationService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amit\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\amit\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\10.0.7\\microsoft.aspnetcore.diagnostics.entityframeworkcore.10.0.7.nupkg.sha512",
