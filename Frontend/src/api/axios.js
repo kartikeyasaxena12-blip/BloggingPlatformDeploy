@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://inkwell-api-n55y.onrender.com',
+  baseURL: import.meta.env.VITE_API_URL || 'https://inkwell-api-n55y.onrender.com',
 });
 
 api.interceptors.request.use((config) => {

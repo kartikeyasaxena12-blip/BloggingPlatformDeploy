@@ -851,3 +851,34 @@ a { color: inherit; text-decoration: none; }
 .unsub-error   { background: rgba(255,77,109,0.12);  color: var(--danger);  border: 1px solid rgba(255,77,109,0.25); }
 .unsub-btn { display: inline-flex; align-items: center; gap: 8px; }
 
+/* ── Service Wake-up Screen ────────────────────────────────── */
+.waking-up-screen {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--bg-primary);
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; padding: 20px;
+}
+.waking-up-content {
+  display: flex; flex-direction: column; align-items: center; gap: 20px;
+  max-width: 400px;
+}
+.waking-up-spinner {
+  width: 50px; height: 50px;
+  border: 4px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.waking-up-content h1 {
+  font-size: 2.5rem; font-weight: 900;
+  background: linear-gradient(135deg, #6c63ff, #a78bfa, #e879f9);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  margin-bottom: -10px;
+}
+.waking-up-content p {
+  font-size: 1.1rem; color: var(--text-primary); font-weight: 500;
+}
+.waking-up-note {
+  font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;
+}

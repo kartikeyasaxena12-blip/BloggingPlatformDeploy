@@ -23,7 +23,7 @@ export default function PostDetails() {
     Promise.all([
       api.get(`/api/posts/${id}`),
       api.get('/api/categories'),
-      user ? api.get(`/api/posts/saved?userId=${user.id || user.userId}`) : Promise.resolve({ data: [] })
+      user ? api.get(`/api/posts/saved?userId=${user.userId}`) : Promise.resolve({ data: [] })
     ])
     .then(([postRes, catRes, savedRes]) => {
       setPost(postRes.data);
@@ -63,10 +63,10 @@ export default function PostDetails() {
     setIsSaving(true);
     try {
       if (isSaved) {
-        await api.delete(`/api/posts/${id}/save?userId=${user.id || user.userId}`);
+        await api.delete(`/api/posts/${id}/save?userId=${user.userId}`);
         setIsSaved(false);
       } else {
-        await api.post(`/api/posts/${id}/save?userId=${user.id || user.userId}`);
+        await api.post(`/api/posts/${id}/save?userId=${user.userId}`);
         setIsSaved(true);
       }
     } catch (err) {

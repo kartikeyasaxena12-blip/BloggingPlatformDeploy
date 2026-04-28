@@ -30,7 +30,7 @@ export default function Home() {
     
     if (user) {
       // Fetch user's saved posts to toggle the bookmark icon correctly
-      api.get(`/api/posts/saved?userId=${user.id}`)
+      api.get(`/api/posts/saved?userId=${user.userId}`)
         .then(res => {
           const ids = new Set(res.data.map(p => p.id));
           setSavedPostIds(ids);
@@ -75,14 +75,14 @@ export default function Home() {
     const isSaved = savedPostIds.has(postId);
     try {
       if (isSaved) {
-        await api.delete(`/api/posts/${postId}/save?userId=${user.id}`);
+        await api.delete(`/api/posts/${postId}/save?userId=${user.userId}`);
         setSavedPostIds(prev => {
           const newSet = new Set(prev);
           newSet.delete(postId);
           return newSet;
         });
       } else {
-        await api.post(`/api/posts/${postId}/save?userId=${user.id}`);
+        await api.post(`/api/posts/${postId}/save?userId=${user.userId}`);
         setSavedPostIds(prev => {
           const newSet = new Set(prev);
           newSet.add(postId);
