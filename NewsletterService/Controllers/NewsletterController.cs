@@ -191,7 +191,7 @@ namespace NewsletterService.Controllers
     {
         public string PostTitle  { get; set; } = string.Empty;
         public string AuthorName { get; set; } = string.Empty;
-        public string PostUrl    { get; set; } = "http://localhost:3000";
+        public string PostUrl    { get; set; } = string.Empty;
     }
 
     // ── HTML Result Page Helper ───────────────────────────────────────────────
@@ -227,7 +227,7 @@ namespace NewsletterService.Controllers
     <div class=""status"">{statusText}</div>
     <h1>{heading}</h1>
     <p>{body}</p>
-    <a href=""http://localhost:3000"">← Back to InkWell</a>
+    <a href=""{_emailSettings.FrontendUrl}"">← Back to InkWell</a>
   </div>
 </body>
 </html>";

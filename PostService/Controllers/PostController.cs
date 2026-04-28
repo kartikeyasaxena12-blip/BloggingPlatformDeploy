@@ -13,11 +13,13 @@ namespace PostService.Controllers
     {
         private readonly PostDbContext _context;
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IConfiguration _configuration;
 
-        public PostController(PostDbContext context, IHttpClientFactory httpClientFactory)
+        public PostController(PostDbContext context, IHttpClientFactory httpClientFactory, IConfiguration configuration)
         {
             _context = context;
             _httpClientFactory = httpClientFactory;
+            _configuration = configuration;
         }
 
         [HttpPost]
@@ -45,8 +47,15 @@ namespace PostService.Controllers
             try
             {
                 var client = _httpClientFactory.CreateClient();
-                var newsNotification = new { PostTitle = post.Title, AuthorName = post.AuthorName };
-                await client.PostAsJsonAsync("http://localhost:5600/api/newsletter/notify", newsNotification);
+                var frontendUrl = _configuration["ServiceUrls:FrontendUrl"] ?? "http://localhost:3000";
+                var newsNotification = new 
+                { 
+                    PostTitle = post.Title, 
+                    AuthorName = post.AuthorName,
+                    PostUrl = $"{frontendUrl}/post/{post.Id}"
+                };
+                var newsletterUrl = _configuration["ServiceUrls:NewsletterService"] ?? "http://localhost:5600";
+                await client.PostAsJsonAsync($"{newsletterUrl}/api/newsletter/notify", newsNotification);
                 Console.WriteLine("[POST SERVICE] Newsletter notification triggered.");
             }
             catch (Exception ex)
@@ -59,7 +68,8 @@ namespace PostService.Controllers
             {
                 var client = _httpClientFactory.CreateClient();
                 var userAlert = new { UserId = post.AuthorId, Message = $"🚀 Your post '{post.Title}' is now live!", Type = "SUCCESS" };
-                var alertRes = await client.PostAsJsonAsync("http://localhost:5700/api/notifications", userAlert);
+                var notificationUrl = _configuration["ServiceUrls:NotificationService"] ?? "http://localhost:5700";
+                var alertRes = await client.PostAsJsonAsync($"{notificationUrl}/api/notifications", userAlert);
                 
                 if (alertRes.IsSuccessStatusCode)
                     Console.WriteLine($"[POST SERVICE] User alert sent successfully to User {post.AuthorId}");
@@ -258,7 +268,8 @@ namespace PostService.Controllers
             {
                 var client = _httpClientFactory.CreateClient();
                 var userAlert = new { UserId = post.AuthorId, Message = $"🗑️ Your post '{post.Title}' has been deleted.", Type = "INFO" };
-                await client.PostAsJsonAsync("http://localhost:5700/api/notifications", userAlert);
+                var notificationUrl = _configuration["ServiceUrls:NotificationService"] ?? "http://localhost:5700";
+                await client.PostAsJsonAsync($"{notificationUrl}/api/notifications", userAlert);
             }
             catch (Exception ex)
             {

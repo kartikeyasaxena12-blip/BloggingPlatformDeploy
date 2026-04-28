@@ -17,5 +17,6 @@ namespace NewsletterService.Models
         /// Base URL of the NewsletterService — used to build confirmation/unsubscribe links.
         /// </summary>
         public string ServiceBaseUrl { get; set; } = "http://localhost:5600";
+        public string FrontendUrl { get; set; } = "http://localhost:3000";
     }
 }

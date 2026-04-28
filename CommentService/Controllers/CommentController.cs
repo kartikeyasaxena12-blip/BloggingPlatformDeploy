@@ -13,11 +13,13 @@ namespace CommentService.Controllers
     {
         private readonly CommentDbContext _context;
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IConfiguration _configuration;
 
-        public CommentController(CommentDbContext context, IHttpClientFactory httpClientFactory)
+        public CommentController(CommentDbContext context, IHttpClientFactory httpClientFactory, IConfiguration configuration)
         {
             _context = context;
             _httpClientFactory = httpClientFactory;
+            _configuration = configuration;
         }
 
         [HttpPost]
@@ -46,7 +48,8 @@ namespace CommentService.Controllers
             {
                 var client = _httpClientFactory.CreateClient();
                 // 1. Fetch Post Details to get the original author
-                var post = await client.GetFromJsonAsync<PostResponse>($"http://localhost:5200/api/posts/{comment.PostId}");
+                var postServiceUrl = _configuration["ServiceUrls:PostService"] ?? "http://localhost:5200";
+                var post = await client.GetFromJsonAsync<PostResponse>($"{postServiceUrl}/api/posts/{comment.PostId}");
                 
                 if (post != null && post.AuthorId != comment.AuthorId) // Don't notify if commenting on own post
                 {
@@ -56,7 +59,8 @@ namespace CommentService.Controllers
                         Message = $"💬 {comment.AuthorName} commented on your post: '{post.Title}'", 
                         Type = "INFO" 
                     };
-                    var alertRes = await client.PostAsJsonAsync("http://localhost:5700/api/notifications", userAlert);
+                    var notificationUrl = _configuration["ServiceUrls:NotificationService"] ?? "http://localhost:5700";
+                    var alertRes = await client.PostAsJsonAsync($"{notificationUrl}/api/notifications", userAlert);
                     
                     if (alertRes.IsSuccessStatusCode)
                         Console.WriteLine($"[COMMENT SERVICE] Notification sent to Author {post.AuthorId}");

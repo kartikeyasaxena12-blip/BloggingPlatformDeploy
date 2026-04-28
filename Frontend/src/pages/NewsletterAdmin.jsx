@@ -7,7 +7,7 @@ export default function NewsletterAdmin() {
   const { user } = useAuth();
   const [postTitle, setPostTitle]     = useState('');
   const [authorName, setAuthorName]   = useState('');
-  const [postUrl, setPostUrl]         = useState('http://localhost:3000');
+  const [postUrl, setPostUrl]         = useState(window.location.origin);
   const [sending, setSending]         = useState(false);
   const [result, setResult]           = useState(null);
   const [stats, setStats]             = useState(null);
@@ -147,7 +147,7 @@ export default function NewsletterAdmin() {
               <label>Post URL <span className="optional">(optional)</span></label>
               <input
                 type="url"
-                placeholder="http://localhost:3000/post/42"
+                placeholder={`${window.location.origin}/post/42`}
                 value={postUrl}
                 onChange={e => setPostUrl(e.target.value)}
               />
