@@ -67,17 +67,17 @@ namespace NewsletterService.Controllers
 
             if (subscriber == null)
                 return Content(HtmlHelper.ResultPage("❌ Token Not Found",
-                    "This confirmation link is invalid or has already been used.", false), "text/html");
+                    "This confirmation link is invalid or has already been used.", false, _emailSettings.FrontendUrl), "text/html");
 
             if (subscriber.IsConfirmed)
                 return Content(HtmlHelper.ResultPage("✅ Already Confirmed",
-                    "Your subscription was already confirmed. You're all set!", true), "text/html");
+                    "Your subscription was already confirmed. You're all set!", true, _emailSettings.FrontendUrl), "text/html");
 
             subscriber.IsConfirmed = true;
             await _context.SaveChangesAsync();
 
             return Content(HtmlHelper.ResultPage("🎉 Subscription Confirmed!",
-                "Welcome to InkWell! You'll receive updates whenever a new post is published.", true), "text/html");
+                "Welcome to InkWell! You'll receive updates whenever a new post is published.", true, _emailSettings.FrontendUrl), "text/html");
         }
 
         // ── GET /api/newsletter/unsubscribe?token= ────────────────────────────
@@ -92,13 +92,13 @@ namespace NewsletterService.Controllers
 
             if (subscriber == null)
                 return Content(HtmlHelper.ResultPage("❌ Not Found",
-                    "This unsubscribe link is invalid or you have already unsubscribed.", false), "text/html");
+                    "This unsubscribe link is invalid or you have already unsubscribed.", false, _emailSettings.FrontendUrl), "text/html");
 
             _context.Subscribers.Remove(subscriber);
             await _context.SaveChangesAsync();
 
             return Content(HtmlHelper.ResultPage("👋 Unsubscribed",
-                "You have been successfully removed from InkWell updates. We're sorry to see you go!", true), "text/html");
+                "You have been successfully removed from InkWell updates. We're sorry to see you go!", true, _emailSettings.FrontendUrl), "text/html");
         }
 
         // ── POST /api/newsletter/unsubscribe (by email body) ──────────────────
@@ -197,7 +197,7 @@ namespace NewsletterService.Controllers
     // ── HTML Result Page Helper ───────────────────────────────────────────────
     internal static class HtmlHelper
     {
-        internal static string ResultPage(string heading, string body, bool success)
+        internal static string ResultPage(string heading, string body, bool success, string frontendUrl)
         {
             var color      = success ? "#22d3a0" : "#ff4d6d";
             var bgColor    = success ? "34,211,160" : "255,77,109";
@@ -227,7 +227,7 @@ namespace NewsletterService.Controllers
     <div class=""status"">{statusText}</div>
     <h1>{heading}</h1>
     <p>{body}</p>
-    <a href=""{_emailSettings.FrontendUrl}"">← Back to InkWell</a>
+    <a href=""{frontendUrl}"">← Back to InkWell</a>
   </div>
 </body>
 </html>";
